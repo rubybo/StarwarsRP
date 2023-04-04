@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% block title %}StarwarsRP - главная{% endblock %}
+
+{% block content %}
+<div class="px-4 py-5 my-5 text-center">
+    <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+  <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+</svg>
+    <h1 class="display-5 fw-bold text-body-emphasis">StarwarsRP</h1>
+    <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">Это сервер по звёздным войнам на базе GMOD, с помощью движка source.</p>
+        <a href="/login"><button type="button" class="btn btn-primary btn-lg px-4 gap-3">Войти</button></a>
+        <a href="/help" ><button type="button" class="btn btn-outline-secondary btn-lg px-4">Как играть?</button></a>
+      </div>
+    </div>
+  </div><br><br>
+<div class="container my-5">
+  <div class="position-relative p-5 text-center text-muted bg-body border border-dashed rounded-5">
+    <button type="button" class="position-absolute top-0 end-0 p-3 m-3 btn-close bg-secondary bg-opacity-10 rounded-pill" aria-label="Close"></button>
+<svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+  <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
+  <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
+</svg>
+      <h1 class="text-body-emphasis">О данных</h1>
+    <p class="col-lg-6 mx-auto mb-4">
+      Все данные на сайте сохранены и находятся под защитой. Версия 0.00.1a
+    </p>
+    <a href="/help" ><button class="btn btn-primary px-5 mb-5" type="button">
+      ЧаВо
+    </button></a>
+  </div>
+</div><br><br>
+<div class="row align-items-md-stretch">
+      <div class="col-md-6">
+        <div class="h-100 p-5 text-bg-dark rounded-3">
+          <h2>Про сервер</h2>
+          <p>Он находистся на стадии разработки первый инвент будет приблизительно к концу апрелю.</p>
+            <a href="https://discord.gg/qRCKaZa3jp" ><button class="btn btn-outline-light" type="button">Discord</button></a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+          <h2>Вакансии</h2>
+          <p>В данный момент нам нужна помощь.</p>
+            <a href="/job" ><button class="btn btn-outline-secondary" type="button">Вакансии</button></a>
+        </div>
+      </div>
+    </div><br><br><br><br>
+
+<div class="container">
+<div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar" style="width: 30%">30%</div>
+</div><br>
+<p class="lead text-body-secondary">Уровень готовности сервера.</p>
+</div>
+{% endblock %}
