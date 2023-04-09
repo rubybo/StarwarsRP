@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+
+{% block title %}Новости{% endblock %}
+
+#Как добавить новость админу 1. скопируйте полностью div 2. измените текст
+{% block content %}
+<div class="container">
+    <div class="px-4 py-5 my-5 text-center">
+
+    <h1 class="display-5 fw-bold text-body-emphasis">Последняя новость</h1>
+    <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">Выпущена 0.01.1a версия сайта</p>
+        <br>
+        <i>Администратор</i>
+        <i>дата:09.04.23</i>
+      </div>
+    </div>
+</div>
+
+{% endblock %}
